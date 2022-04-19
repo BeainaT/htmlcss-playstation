@@ -1,0 +1,22 @@
+/*COMMONS*/
+.btn_ {
+    border-radius: 30px;
+    border: 1px solid;
+}
+/*HEADER*/
+.logo_firm {
+    background-color: #000;
+    text-align: end;
+}
+.logo_firm img {
+    height: 35px;
+    padding: 10px;
+}
+img.search {
+    height: 2em;
+    padding: 5px;
+}
+.d-flex.nav_right {
+    align-items: center;
+    gap: 10px;
+}
