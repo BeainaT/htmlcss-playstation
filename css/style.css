@@ -1,9 +1,21 @@
+/*TYPO*/
+.navbar-light .navbar-nav .nav-link, .nav_right a, .btn {
+    text-transform: capitalize;
+}
 /*COMMONS*/
 .btn_ {
     border-radius: 30px;
     border: 1px solid;
 }
+.navbar-light .navbar-nav .nav-link, .nav_right a {
+    color: #000;
+}
 /*HEADER*/
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
 .logo_firm {
     background-color: #000;
     text-align: end;
@@ -19,4 +31,14 @@ img.search {
 .d-flex.nav_right {
     align-items: center;
     gap: 10px;
+}
+header .navbar a::after {
+    content: url(../img/chevron-down-solid.svg);
+    display: inline-block;
+    width: 0.5em;
+    margin-left: 5px;
+}
+.btn_navbar {
+    background-color: #363636;
+    color: #fff;
 }
