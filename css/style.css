@@ -1,11 +1,11 @@
 /*TYPO*/
-.navbar-light .navbar-nav .nav-link, .nav_right a, .btn {
+.navbar-light .navbar-nav .nav-link, .nav_right a, .btn:not(.hero_btn) {
     text-transform: capitalize;
 }
 /*COMMONS*/
 .btn_ {
     border-radius: 30px;
-    border: 1px solid;
+    border: 1px solid inherit;
 }
 .navbar-light .navbar-nav .nav-link, .nav_right a {
     color: #000;
@@ -41,4 +41,30 @@ header .navbar a::after {
 .btn_navbar {
     background-color: #363636;
     color: #fff;
+}
+/*HERO SECTION*/
+#hero-img {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+.hero_banner {
+    position: absolute;
+    bottom: 3em;
+    color: #fff;
+}
+.hero_box {
+    padding-top: 100px;
+    width: 100%;
+    position: relative;
+}
+.banner_logo {
+    max-width: 300px;
+}
+.hero_btn {
+    background-color: #cd3d0f;
+    color: #fff;
+}
+.hero_col > * {
+    border-radius: 20px;
 }
