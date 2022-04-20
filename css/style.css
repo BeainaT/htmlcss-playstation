@@ -59,9 +59,9 @@ header .navbar a::after {
 }
 /*MAIN*/
 /*HERO SECTION*/
-#hero-img {
+.hero_img {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     object-fit: cover;
 }
 .hero_banner {
@@ -112,3 +112,16 @@ header .navbar a::after {
     cursor: default;
 }
 /*NEW ARRIVALS SECTION*/
+.hero_takes_img {
+    width: 100%;
+    min-height: 80vh;
+    object-fit: cover;
+}
+.new_arrivals_box img {
+    border-radius: 1.5em;
+}
+.new_arrivals_container {
+    width: 100%;
+    background-color: #1f1f1f;;
+    color: #fff;
+}
