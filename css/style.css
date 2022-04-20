@@ -1,14 +1,31 @@
 /*TYPO*/
-.navbar-light .navbar-nav .nav-link, .nav_right a, .btn:not(.hero_btn) {
+body {
+    color: #1f1f1f;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+section.text_light p {
+    color: #727272;
+}
+.navbar-light .navbar-nav .nav-link, .nav_right a {
     text-transform: capitalize;
 }
+.slogan, sup {
+    text-transform: uppercase;
+}
+sup {
+    font-size: 0.5em;
+}
 /*COMMONS*/
-.btn_ {
+.btn_custom {
     border-radius: 30px;
     border: 1px solid inherit;
+    color: #fff;
 }
 .navbar-light .navbar-nav .nav-link, .nav_right a {
     color: #000;
+}
+main {
+    padding-top: 100px;
 }
 /*HEADER*/
 header {
@@ -19,29 +36,25 @@ header {
 .logo_firm {
     background-color: #000;
     text-align: end;
+    padding: 5px 0;
 }
 .logo_firm img {
-    height: 35px;
-    padding: 10px;
+    width: 4em;
 }
 img.search {
-    height: 2em;
-    padding: 5px;
-}
-.d-flex.nav_right {
-    align-items: center;
-    gap: 10px;
+    width: 1.2em;
+    margin-left: 1em;
 }
 header .navbar a::after {
     content: url(../img/chevron-down-solid.svg);
     display: inline-block;
     width: 0.5em;
-    margin-left: 5px;
+    margin: 0 5px;
 }
 .btn_navbar {
     background-color: #363636;
-    color: #fff;
 }
+/*MAIN*/
 /*HERO SECTION*/
 #hero-img {
     width: 100%;
@@ -51,10 +64,11 @@ header .navbar a::after {
 .hero_banner {
     position: absolute;
     bottom: 3em;
+    left: 0;
     color: #fff;
+    width: 100%;
 }
 .hero_box {
-    padding-top: 100px;
     width: 100%;
     position: relative;
 }
@@ -65,6 +79,32 @@ header .navbar a::after {
     background-color: #cd3d0f;
     color: #fff;
 }
-.hero_col > * {
-    border-radius: 20px;
+.hero_col > img, .hero_col {
+    border-radius: 1.5em;
+}
+.hero_col.preview, .hero_col:hover {
+    padding: 2px;
+    border: 2px solid #0072ce;
+}
+.hero_col:hover {
+    position: relative;
+    top: -10px;
+}
+/*PROMO SECTION*/
+.btn_promo {
+    background-color: #2d64e6;
+}
+.slogan {
+    color: #0072ce;
+    font-weight: 500;
+}
+.promo_col {
+    text-align: center;
+    opacity: 0.5;
+}
+.promo_col:hover, .promo_col:first-of-type {
+    border-bottom: 2px solid #0072ce;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: default;
 }
