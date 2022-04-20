@@ -1,7 +1,10 @@
 /*TYPO*/
 body {
     color: #1f1f1f;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+    font-size: 2em;
 }
 section.text_light p {
     color: #727272;
@@ -108,3 +111,4 @@ header .navbar a::after {
     transition: 0.3s;
     cursor: default;
 }
+/*NEW ARRIVALS SECTION*/
