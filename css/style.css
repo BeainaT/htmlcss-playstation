@@ -114,13 +114,14 @@ header .navbar a:not(.dropdown-item):hover::after {
 .hero_col > img, .hero_col {
     border-radius: 1.5em;
 }
-.hero_col.preview, .hero_col:active {
+.hero_col.preview {
     padding: 2px;
     border: 2px solid #0072ce;
 }
 .hero_col:hover {
     transform: translateY(-10px);
     transition: 0.5s;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.8);
 }
 /*PROMO SECTION*/
 .btn_promo {
@@ -154,6 +155,11 @@ header .navbar a:not(.dropdown-item):hover::after {
 }
 .new_arrivals_box img {
     border-radius: 1.5em;
+}
+.new_arrivals_box:hover {
+    transform: translate(-5px, -5px);
+    cursor: pointer;
+    transition: 0.5s linear;
 }
 .new_arrivals_container {
     width: 100%;
