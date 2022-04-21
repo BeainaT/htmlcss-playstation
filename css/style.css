@@ -9,7 +9,7 @@ h2 {
 section.text_light p {
     color: #727272;
 }
-.navbar-light .navbar-nav .nav-link, .nav_right a {
+.navbar-light .navbar-nav .nav-link, .nav_right a, footer span {
     text-transform: capitalize;
 }
 .slogan, sup {
@@ -32,6 +32,10 @@ main {
 }
 .container_custom {
     max-width: 576px;
+}
+
+footer a:hover, footer a {
+    color: inherit;
 }
 /*HEADER*/
 header {
@@ -88,13 +92,13 @@ header .navbar a::after {
 .hero_col > img, .hero_col {
     border-radius: 1.5em;
 }
-.hero_col.preview, .hero_col:hover {
+.hero_col.preview, .hero_col:active {
     padding: 2px;
     border: 2px solid #0072ce;
 }
 .hero_col:hover {
-    position: relative;
-    top: -10px;
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
 /*PROMO SECTION*/
 .btn_promo {
@@ -105,6 +109,7 @@ header .navbar a::after {
     font-weight: 500;
 }
 .promo_col {
+    border-bottom: 2px solid transparent;
     text-align: center;
     opacity: 0.5;
 }
@@ -146,4 +151,25 @@ header .navbar a::after {
 }
 .btn_now {
     color: #000;
+}
+/*FOOTER*/
+footer {
+    background-color: #00439c;
+    color: #fff;
+}
+footer nav ul li {
+    list-style: none;
+}
+.sony_corp_logo {
+    max-width: 150px;
+    margin-bottom: 0.5em;
+}
+.globe_logo img {
+    max-width: 1em;
+}
+footer a:not(.legal_info) {
+    text-decoration: none;
+}
+.ps_footer_logo {
+    width: 80px;
 }
