@@ -9,7 +9,7 @@ h2 {
 section.text_light p {
     color: #727272;
 }
-.navbar-light .navbar-nav .nav-link, .nav_right a, footer span {
+.navbar-light .navbar-nav .nav-link, .nav_right a, .new_arrivals_box h6, footer p span {
     text-transform: capitalize;
 }
 .slogan, sup {
@@ -21,12 +21,14 @@ sup {
 /*COMMONS*/
 .btn_custom {
     border-radius: 30px;
-    border: 1px solid inherit;
+    border: 2px solid transparent;
     color: #fff;
+    outline: transparent solid 2px;
 }
 .navbar-light .navbar-nav .nav-link, .nav_right a {
     color: #000;
 }
+
 main {
     padding-top: 100px;
 }
@@ -64,6 +66,11 @@ header .navbar a::after {
 .btn_navbar {
     background-color: #363636;
 }
+.btn_navbar:hover {
+    outline-color: #000;
+    border-color: inherit;
+    color: #fff;
+}
 /*MAIN*/
 /*HERO SECTION*/
 .hero_img {
@@ -89,6 +96,11 @@ header .navbar a::after {
     background-color: #cd3d0f;
     color: #fff;
 }
+.hero_btn:hover {
+    border-color: rgba(0, 0, 0, 0.8);
+    outline-color: #cd3d0f;
+    color: inherit;
+}
 .hero_col > img, .hero_col {
     border-radius: 1.5em;
 }
@@ -103,6 +115,11 @@ header .navbar a::after {
 /*PROMO SECTION*/
 .btn_promo {
     background-color: #2d64e6;
+}
+.btn_promo:hover {
+    outline-color: #2d64e6;
+    border-color: inherit;
+    color: #fff;
 }
 .slogan {
     color: #0072ce;
@@ -137,9 +154,13 @@ header .navbar a::after {
 .ps_plus {
     background-color: #bebcbb;
 }
-.btn_plus, .btn_now {
+.btn_plus, .btn_plus:hover {
     background-color: #cbcacb;
     color: #2d64e6;
+}
+.btn_plus:hover {
+    outline-color: #cbcacb;
+    border-color: #bebcbb;
 }
 .plus_img {
     width: 300px;
@@ -149,8 +170,13 @@ header .navbar a::after {
     background-color: #161c3b;
     color: #fff;
 }
-.btn_now {
+.btn_now, .btn_now:hover {
+    background-color: #f5f5f5;
     color: #000;
+}
+.btn_now:hover {
+    border-color: rgba(0, 0, 0, 0.8);
+    outline-color: #f5f5f5;
 }
 /*FOOTER*/
 footer {
@@ -173,3 +199,8 @@ footer a:not(.legal_info) {
 .ps_footer_logo {
     width: 80px;
 }
+
+/* .dropdown-menu {
+    width: 100vw;
+    border: none;
+} */
