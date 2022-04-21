@@ -57,12 +57,19 @@ img.search {
     width: 1.2em;
     margin-left: 1em;
 }
-header .navbar a::after {
+header .navbar a:not(.dropdown-item)::after {
     content: url(../img/chevron-down-solid.svg);
     display: inline-block;
     width: 0.5em;
     margin: 0 5px;
 }
+header .navbar a:not(.dropdown-item):hover::after {
+    content: url(../img/chevron-down-solid-hover.svg);
+    display: inline-block;
+    width: 0.5em;
+    margin: 0 5px;
+}
+
 .btn_navbar {
     background-color: #363636;
 }
@@ -70,6 +77,9 @@ header .navbar a::after {
     outline-color: #000;
     border-color: inherit;
     color: #fff;
+}
+.dropdown-item:hover {
+    background-color: inherit;
 }
 /*MAIN*/
 /*HERO SECTION*/
@@ -199,8 +209,3 @@ footer a:not(.legal_info) {
 .ps_footer_logo {
     width: 80px;
 }
-
-/* .dropdown-menu {
-    width: 100vw;
-    border: none;
-} */
