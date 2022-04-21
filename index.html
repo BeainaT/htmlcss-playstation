@@ -29,8 +29,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse gap-2" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2 gap-2">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">giochi</a>
@@ -119,7 +119,11 @@
                         </li>
                     </ul>
                     <button class="btn btn_custom btn_navbar" type="submit">Accedi</button>
-                    <img class="search" src="img/lens.svg" alt="lens img">
+                    <div class="search_box">
+                        <input type="text" placeholder="Search" class="search_input">
+                        <a href="#" class="search_btn"><img class="search" src="img/lens.svg" alt="lens img"></a>
+                    </div>
+                    
                 </div>
             </div>
         </nav>

@@ -55,15 +55,14 @@ header {
 }
 img.search {
     width: 1.2em;
-    margin-left: 1em;
 }
-header .navbar a:not(.dropdown-item)::after {
+header .navbar a:not(.dropdown-item, .search_btn)::after {
     content: url(../img/chevron-down-solid.svg);
     display: inline-block;
     width: 0.5em;
     margin: 0 5px;
 }
-header .navbar a:not(.dropdown-item):hover::after {
+header .navbar a:not(.dropdown-item, .search_btn):hover::after {
     content: url(../img/chevron-down-solid-hover.svg);
     display: inline-block;
     width: 0.5em;
@@ -80,6 +79,23 @@ header .navbar a:not(.dropdown-item):hover::after {
 }
 .dropdown-item:hover {
     background-color: inherit;
+}
+.search_input {
+    background: white;
+    color: inherit;
+    border: none;
+    outline: none;
+    width: 0;
+    line-height: 2em;
+    font-size: 1em;
+    transition: 0.7s ease;
+    padding: 0;
+    margin: 1em 0;
+    border-radius: 10px;
+}
+.search_box:hover > .search_input {
+    width: 100px;
+    padding: 0 5px;
 }
 /*MAIN*/
 /*HERO SECTION*/
