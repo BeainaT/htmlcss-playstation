@@ -30,6 +30,9 @@ sup {
 main {
     padding-top: 100px;
 }
+.container_custom {
+    max-width: 576px;
+}
 /*HEADER*/
 header {
     position: fixed;
@@ -127,12 +130,20 @@ header .navbar a::after {
 }
 /*PLUS SECTION*/
 .ps_plus {
-    background-color: lightgray;
+    background-color: #bebcbb;
 }
-.btn_plus {
-    background-color: #727272;
+.btn_plus, .btn_now {
+    background-color: #cbcacb;
     color: #2d64e6;
 }
 .plus_img {
     width: 300px;
+}
+/*NOW SECTION*/
+.ps_now {
+    background-color: #161c3b;
+    color: #fff;
+}
+.btn_now {
+    color: #000;
 }
