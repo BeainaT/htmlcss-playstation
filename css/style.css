@@ -1,23 +1,33 @@
 /*TYPO*/
 body {
     color: #1f1f1f;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 h2 {
     font-size: 2em;
 }
+
 section.text_light p {
     color: #727272;
 }
-.navbar-light .navbar-nav .nav-link, .nav_right a, .new_arrivals_box h6, footer p span {
+
+.navbar-light .navbar-nav .nav-link,
+.nav_right a,
+.new_arrivals_box h6,
+footer p span {
     text-transform: capitalize;
 }
-.slogan, sup {
+
+.slogan,
+sup {
     text-transform: uppercase;
 }
+
 sup {
     font-size: 0.5em;
 }
+
 /*COMMONS*/
 .btn_custom {
     border-radius: 30px;
@@ -25,43 +35,53 @@ sup {
     color: #fff;
     outline: transparent solid 2px;
 }
-.navbar-light .navbar-nav .nav-link, .nav_right a {
+
+.navbar-light .navbar-nav .nav-link,
+.nav_right a {
     color: #000;
 }
 
 main {
     padding-top: 100px;
 }
+
 .container_custom {
     max-width: 576px;
 }
 
-footer a:hover, footer a {
+footer a:hover,
+footer a {
     color: inherit;
 }
+
 /*HEADER*/
 header {
     position: fixed;
     z-index: 10;
     width: 100%;
 }
+
 .logo_firm {
     background-color: #000;
     text-align: end;
     padding: 5px 0;
 }
+
 .logo_firm img {
     width: 4em;
 }
+
 img.search {
     width: 1.2em;
 }
+
 header .navbar a:not(.dropdown-item, .search_btn)::after {
     content: url(../img/chevron-down-solid.svg);
     display: inline-block;
     width: 0.5em;
     margin: 0 5px;
 }
+
 header .navbar a:not(.dropdown-item, .search_btn):hover::after {
     content: url(../img/chevron-down-solid-hover.svg);
     display: inline-block;
@@ -72,14 +92,17 @@ header .navbar a:not(.dropdown-item, .search_btn):hover::after {
 .btn_navbar {
     background-color: #363636;
 }
+
 .btn_navbar:hover {
     outline-color: #000;
     border-color: inherit;
     color: #fff;
 }
+
 .dropdown-item:hover {
     background-color: inherit;
 }
+
 .search_input {
     background: white;
     color: inherit;
@@ -93,10 +116,30 @@ header .navbar a:not(.dropdown-item, .search_btn):hover::after {
     margin: 1em 0;
     border-radius: 10px;
 }
-.search_box:hover > .search_input {
+
+.search_box:hover>.search_input {
     width: 100px;
     padding: 0 5px;
 }
+
+/*drop-down menu*/
+li.nav-item.dropdown {
+    position: static;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: 0;
+    margin-top: -.125rem;
+    right: 0;
+    border: none;
+    border-radius: 0;
+}
+
+ul.dropdown-menu.show>li a.dropdown-item,
+ul.dropdown-menu.show>li:not(.drop_divider) {
+    display: inline-block;
+}
+
 /*MAIN*/
 /*HERO SECTION*/
 .hero_img {
@@ -104,6 +147,7 @@ header .navbar a:not(.dropdown-item, .search_btn):hover::after {
     min-height: 80vh;
     object-fit: cover;
 }
+
 .hero_banner {
     position: absolute;
     bottom: 3em;
@@ -111,123 +155,157 @@ header .navbar a:not(.dropdown-item, .search_btn):hover::after {
     color: #fff;
     width: 100%;
 }
+
 .hero_box {
     width: 100%;
     position: relative;
 }
+
 .banner_logo {
     max-width: 300px;
 }
+
 .hero_btn {
     background-color: #cd3d0f;
     color: #fff;
 }
+
 .hero_btn:hover {
     border-color: rgba(0, 0, 0, 0.8);
     outline-color: #cd3d0f;
     color: inherit;
 }
-.hero_col > img, .hero_col {
+
+.hero_col>img,
+.hero_col {
     border-radius: 1.5em;
 }
+
 .hero_col.preview {
     padding: 2px;
     border: 2px solid #0072ce;
 }
+
 .hero_col:hover {
     transform: translateY(-10px);
     transition: 0.5s;
     box-shadow: 0 1em 1em rgba(0, 0, 0, 0.8);
 }
+
 /*PROMO SECTION*/
 .btn_promo {
     background-color: #2d64e6;
 }
+
 .btn_promo:hover {
     outline-color: #2d64e6;
     border-color: inherit;
     color: #fff;
 }
+
 .slogan {
     color: #0072ce;
     font-weight: 500;
 }
+
 .promo_col {
     border-bottom: 2px solid transparent;
     text-align: center;
     opacity: 0.5;
 }
-.promo_col:hover, .promo_col:first-of-type {
+
+.promo_col:hover,
+.promo_col:first-of-type {
     border-bottom: 2px solid #0072ce;
     opacity: 1;
     transition: 0.3s;
     cursor: default;
 }
+
 /*NEW ARRIVALS SECTION*/
 .hero_takes_img {
     width: 100%;
     min-height: 80vh;
     object-fit: cover;
 }
+
 .new_arrivals_box img {
     border-radius: 1.5em;
 }
+
 .new_arrivals_box:hover {
     transform: translate(-5px, -5px);
     cursor: pointer;
     transition: 0.5s linear;
 }
+
 .new_arrivals_container {
     width: 100%;
-    background-color: #1f1f1f;;
+    background-color: #1f1f1f;
+    ;
     color: #fff;
 }
+
 /*PLUS SECTION*/
 .ps_plus {
     background-color: #bebcbb;
 }
-.btn_plus, .btn_plus:hover {
+
+.btn_plus,
+.btn_plus:hover {
     background-color: #cbcacb;
     color: #2d64e6;
 }
+
 .btn_plus:hover {
     outline-color: #cbcacb;
     border-color: #bebcbb;
 }
+
 .plus_img {
     width: 300px;
 }
+
 /*NOW SECTION*/
 .ps_now {
     background-color: #161c3b;
     color: #fff;
 }
-.btn_now, .btn_now:hover {
+
+.btn_now,
+.btn_now:hover {
     background-color: #f5f5f5;
     color: #000;
 }
+
 .btn_now:hover {
     border-color: rgba(0, 0, 0, 0.8);
     outline-color: #f5f5f5;
 }
+
 /*FOOTER*/
 footer {
     background-color: #00439c;
     color: #fff;
 }
+
 footer nav ul li {
     list-style: none;
 }
+
 .sony_corp_logo {
     max-width: 150px;
     margin-bottom: 0.5em;
 }
+
 .globe_logo img {
     max-width: 1em;
 }
+
 footer a:not(.legal_info) {
     text-decoration: none;
 }
+
 .ps_footer_logo {
     width: 80px;
 }
